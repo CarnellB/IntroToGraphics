@@ -35,15 +35,15 @@ def chooseSecondPath(sourcePath):
 	secondPath = ''
 	
 	if sourcePath == "stairs":
-		print "You came from the stairs"
-		while secondPath != '1' and secondPath !='2':
+		print "You see a shed, do you hide behind it or go on ahead?"
+		while secondPath != 'Go' and secondPath !='Shed':
 			print "pick another path (Go or Shed)"
 			secondPath = raw_input()
 			if secondPath != 'Go' and secondPath != 'Shed':
 				print('I did not understand that.')
 		   		print
 		   
-	return secondPath
+	checkSecondPath(secondPath)
 
 
 #A small cinematic that splits into	the first three options	
@@ -78,19 +78,19 @@ def checkSecondPath(chosenSecondPath):
 
 
 def firstPath1():
-	print "test second split"	
+	print "You go up the stairs."	
 	sourcePath = 'stairs'
 	chooseSecondPath(sourcePath)
 		
 def firstPath2():
 	print "you walk out into the gorge. you die."
 	sourcePath = 'gorge'
-	chooseSecondPath()
+	chooseSecondPath(sourcePath)
 	
 def firstPath3():
 	print "you walk down the hallway. you win for some reason."
 	sourcePath = 'hallway'
-	chooseSecondPath()
+	chooseSecondPath(sourcePath)
 	
 def secondPath1():
 	print "you chose path Go"
@@ -110,9 +110,7 @@ def main():
 		pathNumber = chooseFirstPath()
 		checkFirstPath(pathNumber)
 		
-		pathNumber2 = chooseSecondPath
-		checkSecondPath(pathNumber2)
-		
+
 	
 		print ('Do you want to play again? (yes or no)')
 		playAgain = raw_input()
