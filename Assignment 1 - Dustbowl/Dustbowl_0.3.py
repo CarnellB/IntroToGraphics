@@ -5,7 +5,7 @@ Last Modified By: Brandon Carnell
 Date Last Modified: May 23rd, 2013
 Description: A text based adventure game based on a level from
 	          Valve's 2007 Team Fortress 2 game
-Revision History: Version 0.2
+Revision History: Version 0.3
 """
 
 import time
