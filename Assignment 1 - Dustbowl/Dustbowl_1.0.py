@@ -214,9 +214,9 @@ def chooseFinalPath(sourcePath):
 		print("You could cap the point now, or rub salt in the wound and fight the Sentry.")
 		
 	while finalPath != "ignore" and finalPath != "fight":
-		print ""
+		print "pick another path (ignore or fight)"
 		finalPath = raw_input().lower()
-		if fourthPath != 'ignore' and fourthPath != 'fight':
+		if finalPath != 'ignore' and finalPath != 'fight':
 			print('I did not understand that.')
 		   	print #Empty Spacing
 			
