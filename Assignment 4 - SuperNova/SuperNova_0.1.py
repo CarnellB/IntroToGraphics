@@ -1,6 +1,22 @@
 import pygame
 pygame.init()
+"""
+Source File Name: SuperNova_0.1.py
+Last Modified by: Brandon C
+Date Last Modified: July 15th 2013
 
+Description: A simple sidescrolling game set in space,
+             avoid asteroids and collect gems
+             
+Revision History: SuperNova_0.1 - player sprite added
+                  SuperNova_0.2 - gem sprite added
+                  SuperNova_0.3 - rock sprite added
+                  SuperNova_0.4 - parralax background added
+                  SuperNova_0.5 - music added
+                  SuperNova_0.6 - collisions and multiple enemies added
+                  SuperNova_0.7 - scoring added
+                  SuperNova_0.8 - intro screen added
+"""
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
